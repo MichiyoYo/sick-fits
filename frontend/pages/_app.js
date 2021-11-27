@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-props-no-spreading */
 import NProgress from 'nprogress';
 import Router from 'next/router';
 import Page from '../components/Page';
 
-// TODO: swap with our own
 import '../components/styles/nprogress.css';
 
 Router.events.on('routeChangeStart', () => NProgress.start());
