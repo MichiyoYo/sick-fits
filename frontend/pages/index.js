@@ -1,5 +1,9 @@
-export default function IndexPage(){
-  return <div>
-    <p>Hello!</p>
-  </div>
+export default function IndexPage() {
+  return (
+    // react fragment
+    <>
+      <h1>Hello index page!</h1>
+      <p>Hey there</p>
+    </>
+  );
 }
