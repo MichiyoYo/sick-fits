@@ -1,7 +1,5 @@
-import React from 'react';
-
 function SellPage(props) {
-  return <div>sell</div>;
+  return <h1>Sell page</h1>;
 }
 
 export default SellPage;
