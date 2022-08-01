@@ -9,7 +9,6 @@ const Logo = styled.h1`
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
-    font-family: 'Open Sans', sans-serif;
   }
   font-size: 4rem;
   margin-left: 2rem;
@@ -17,6 +16,7 @@ const Logo = styled.h1`
   z-index: 2;
   background-color: red;
   transform: skew(-7deg);
+  width: fit-content;
 `;
 
 const HeaderStyles = styled.header`
