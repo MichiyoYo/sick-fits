@@ -51,11 +51,11 @@ const InnerStyles = styled.div`
 
 function Page({ children }) {
   return (
-    <div>
+    <>
       <GlobalStyle />
       <Header />
       <InnerStyles>{children}</InnerStyles>
-    </div>
+    </>
   );
 }
 
