@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import 'dotenv/config';
 import { config, createSchema } from '@keystone-next/keystone/schema';
 import { createAuth } from '@keystone-next/auth';

@@ -199,6 +199,24 @@ export type ProductWhereInput = {
   readonly description_not_ends_with_i?: Scalars['String'] | null;
   readonly description_in?: ReadonlyArray<Scalars['String'] | null> | null;
   readonly description_not_in?: ReadonlyArray<Scalars['String'] | null> | null;
+  readonly status?: Scalars['String'] | null;
+  readonly status_not?: Scalars['String'] | null;
+  readonly status_contains?: Scalars['String'] | null;
+  readonly status_not_contains?: Scalars['String'] | null;
+  readonly status_starts_with?: Scalars['String'] | null;
+  readonly status_not_starts_with?: Scalars['String'] | null;
+  readonly status_ends_with?: Scalars['String'] | null;
+  readonly status_not_ends_with?: Scalars['String'] | null;
+  readonly status_i?: Scalars['String'] | null;
+  readonly status_not_i?: Scalars['String'] | null;
+  readonly status_contains_i?: Scalars['String'] | null;
+  readonly status_not_contains_i?: Scalars['String'] | null;
+  readonly status_starts_with_i?: Scalars['String'] | null;
+  readonly status_not_starts_with_i?: Scalars['String'] | null;
+  readonly status_ends_with_i?: Scalars['String'] | null;
+  readonly status_not_ends_with_i?: Scalars['String'] | null;
+  readonly status_in?: ReadonlyArray<Scalars['String'] | null> | null;
+  readonly status_not_in?: ReadonlyArray<Scalars['String'] | null> | null;
 };
 
 export type ProductWhereUniqueInput = {
@@ -211,11 +229,14 @@ export type SortProductsBy =
   | 'name_ASC'
   | 'name_DESC'
   | 'description_ASC'
-  | 'description_DESC';
+  | 'description_DESC'
+  | 'status_ASC'
+  | 'status_DESC';
 
 export type ProductUpdateInput = {
   readonly name?: Scalars['String'] | null;
   readonly description?: Scalars['String'] | null;
+  readonly status?: Scalars['String'] | null;
 };
 
 export type ProductsUpdateInput = {
@@ -226,6 +247,7 @@ export type ProductsUpdateInput = {
 export type ProductCreateInput = {
   readonly name?: Scalars['String'] | null;
   readonly description?: Scalars['String'] | null;
+  readonly status?: Scalars['String'] | null;
 };
 
 export type ProductsCreateInput = {
@@ -317,11 +339,12 @@ export type UserListFn = (
 
 export type ProductListTypeInfo = {
   key: 'Product';
-  fields: 'id' | 'name' | 'description';
+  fields: 'id' | 'name' | 'description' | 'status';
   backing: {
     readonly id: string;
     readonly name?: string | null;
     readonly description?: string | null;
+    readonly status?: string | null;
   };
   inputs: {
     where: ProductWhereInput;

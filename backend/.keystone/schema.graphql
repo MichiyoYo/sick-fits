@@ -151,6 +151,7 @@ type Product {
   id: ID!
   name: String
   description: String
+  status: String
 }
 
 input ProductWhereInput {
@@ -196,6 +197,24 @@ input ProductWhereInput {
   description_not_ends_with_i: String
   description_in: [String]
   description_not_in: [String]
+  status: String
+  status_not: String
+  status_contains: String
+  status_not_contains: String
+  status_starts_with: String
+  status_not_starts_with: String
+  status_ends_with: String
+  status_not_ends_with: String
+  status_i: String
+  status_not_i: String
+  status_contains_i: String
+  status_not_contains_i: String
+  status_starts_with_i: String
+  status_not_starts_with_i: String
+  status_ends_with_i: String
+  status_not_ends_with_i: String
+  status_in: [String]
+  status_not_in: [String]
 }
 
 input ProductWhereUniqueInput {
@@ -209,11 +228,14 @@ enum SortProductsBy {
   name_DESC
   description_ASC
   description_DESC
+  status_ASC
+  status_DESC
 }
 
 input ProductUpdateInput {
   name: String
   description: String
+  status: String
 }
 
 input ProductsUpdateInput {
@@ -224,6 +246,7 @@ input ProductsUpdateInput {
 input ProductCreateInput {
   name: String
   description: String
+  status: String
 }
 
 input ProductsCreateInput {
