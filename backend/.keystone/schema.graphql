@@ -152,6 +152,7 @@ type Product {
   name: String
   description: String
   status: String
+  price: Int
 }
 
 input ProductWhereInput {
@@ -215,6 +216,14 @@ input ProductWhereInput {
   status_not_ends_with_i: String
   status_in: [String]
   status_not_in: [String]
+  price: Int
+  price_not: Int
+  price_lt: Int
+  price_lte: Int
+  price_gt: Int
+  price_gte: Int
+  price_in: [Int]
+  price_not_in: [Int]
 }
 
 input ProductWhereUniqueInput {
@@ -230,12 +239,15 @@ enum SortProductsBy {
   description_DESC
   status_ASC
   status_DESC
+  price_ASC
+  price_DESC
 }
 
 input ProductUpdateInput {
   name: String
   description: String
   status: String
+  price: Int
 }
 
 input ProductsUpdateInput {
@@ -247,6 +259,7 @@ input ProductCreateInput {
   name: String
   description: String
   status: String
+  price: Int
 }
 
 input ProductsCreateInput {

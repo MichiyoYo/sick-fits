@@ -22,6 +22,10 @@ export const Product = list({
           label: 'Available',
           value: 'available',
         },
+        {
+          label: 'Unavailable',
+          value: 'unavailable',
+        },
       ],
       defaultValue: 'draft',
       ui: {
